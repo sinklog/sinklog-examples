@@ -7,6 +7,7 @@ $ logger -t <log key> -n sinklog.com "log message"
 ```
 
 ## Mac shell
+(`logger` versions without the `-n` option to forward to remote servers)
 Install the [python-sinklog](https://github.com/sinklog/python-sinklog) package for the `sinklog` client.
 
 ## Python
