@@ -44,3 +44,18 @@ var log = bunyan.createLogger({
 log.debug({foo: 'bar'}, 'hello %s', 'world');
 ```
 
+## Java/Android
+Use [logback-syslog4j](https://github.com/papertrail/logback-syslog4j)
+```xml
+<syslogConfig class="org.productivity.java.syslog4j.impl.net.udp.UDPNetSyslogConfig">
+      <!-- remote system to log to -->
+      <host>sinklog.com</host>
+      <!-- remote port to log to -->
+      <port>514</port>
+      <!-- program name to log as -->
+      <ident>
+        "<sinklog log key>""
+      </ident>
+</syslogConfig>
+```
+
