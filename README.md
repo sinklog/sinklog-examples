@@ -12,19 +12,9 @@ See [python-sinklog](https://github.com/sinklog/python-sinklog).
 
 ## NodeJS
 ### winston
-```bash
-$ npm install winston 
-$ npm install winston-syslog
-```
-
-Add the logger:
 ```javascript
 var winston = require('winston');
-//
-// Requiring `winston-syslog` will expose 
-// `winston.transports.Syslog`
-//
 require('winston-syslog').Syslog;
 
-winston.add(winston.transports.Syslog, {appName: "<log key>"});
+winston.add(winston.transports.Syslog, {host: "sinklog.com", appName: "<log key>"});
 ```
