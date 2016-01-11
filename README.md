@@ -1,6 +1,11 @@
 # Example integrations for Sinklog.com
 Obtain a log key from https://sinklog.com/
 
+## Shell
+```bash
+$ logger -t <log key> -n sinklog.com "log message"
+```
+
 ## Python
 See [python-sinklog](https://github.com/sinklog/python-sinklog).
 
