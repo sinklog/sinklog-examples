@@ -54,7 +54,7 @@ Use [logback-syslog4j](https://github.com/papertrail/logback-syslog4j)
       <port>514</port>
       <!-- program name to log as -->
       <ident>
-        <sinklog log key>
+        <your log key>
       </ident>
 </syslogConfig>
 ```
