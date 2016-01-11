@@ -1,15 +1,12 @@
 # Example integrations for Sinklog.com
 Obtain a log key from https://sinklog.com/
 
-## Linux shell
+## Shell
 ```bash
 $ logger -t <log key> -n sinklog.com "log message"
 ```
 
 For `logger` versions that don't support the `-n` option to send to remote servers, install [python-sinklog](https://github.com/sinklog/python-sinklog), which includes a convenient CLI for Sinklog.
-
-## Mac shell
-Install the [python-sinklog](https://github.com/sinklog/python-sinklog) package for the `sinklog` client.
 
 ## Python
 See [python-sinklog](https://github.com/sinklog/python-sinklog).
