@@ -59,3 +59,21 @@ Use [logback-syslog4j](https://github.com/papertrail/logback-syslog4j)
 </syslogConfig>
 ```
 
+# Viewing logs
+
+## Shell
+```bash
+$ curl -ns https://sinklog.com/s/<log name>
+```
+
+## Browser
+You can just visit your log url directly and it will stream in your browser.  Or you can use a WebSocket:
+
+```javascript
+var ws = new WebSocket("wss://sinklog.com/s/<log name>");
+ws.onmessage = function(e) {
+  console.log(e.data); // log line
+}
+```
+
+
